@@ -1,0 +1,12 @@
+
+import { createRoot } from 'react-dom/client'
+import App from './App.tsx'
+import './index.css'
+
+// Create root element and render the App
+const rootElement = document.getElementById("root");
+if (rootElement) {
+  createRoot(rootElement).render(<App />);
+} else {
+  console.error("Failed to find the root element");
+}
